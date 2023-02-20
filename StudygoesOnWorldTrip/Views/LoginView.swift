@@ -1,69 +1,126 @@
 //
 //  LoginView.swift
-//  StudygoesOnWorldTrip
+//  Firebaseauth
 //
-//  Created by Marcel Zimmermann on 07.02.23.
+//  Created by Marcel Zimmermann on 17.02.23.
 //
 
 import SwiftUI
+import Firebase
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
-    @State private var passwordError = false
     
-    @State private var showForgotPasswordView = false
+    @State private var email : String = ""
+    
+    @State private var password : String = ""
 
-    
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Anmelden")
-                .font(.largeTitle)
+        ZStack {
+            Image("willcomebild")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
             
-            TextField("E-Mail-Adresse", text: $email)
-                .padding()
-                .background(Color.gray)
-                .cornerRadius(10)
             
-            SecureField("Passwort", text: $password)
-                .padding()
-                .background(passwordError ? Color.red.opacity(0.2) : Color.gray)
-                .cornerRadius(10)
-                .overlay(passwordError ? Text("Passwort muss mindestens 8 Zeichen lang sein").foregroundColor(.red) : nil)
-            
-            HStack {
-                Button(action: {
-                    self.showForgotPasswordView = true
-                }) {
-                    Text("Password vergessen")
-                    
-                }.padding()
-                    .foregroundColor(Color.blue)
-                    .font(.system(size: 14))
+            VStack(spacing: 20) {
+                Text("Welcome")
+                    .foregroundColor(Color.orange)
+                    .font(.system(size: 40, weight: .bold, design: .rounded))
+                    .offset(x: -100, y: -100)
                 
-                    .sheet(isPresented: $showForgotPasswordView) {
-                        ForgotPasswordView()
+                TextField("Email", text: $email)
+                    .foregroundColor(Color.black)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: email.isEmpty) {
+                        Text("Email")
+                            .foregroundColor(.white)
+                            .bold()
+                    }
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.orange)
+                
+                SecureField("Password", text: $password)
+                    .foregroundColor(Color.white)
+                    .textFieldStyle(.plain)
+                    .placeholder(when: password.isEmpty) {
+                        Text("Password")
+                            .foregroundColor(.white)
+                            .bold()
                     }
                 
-                Spacer()
+                Rectangle()
+                    .frame(width: 350, height: 1)
+                    .foregroundColor(.orange)
                 
-                Button(action: {
-                    if self.password.count < 8 {
-                        self.passwordError = true
-                    } else {
-                        self.passwordError = false
-                        // Hier könnte eine Aktion für den "Registrieren"-Button eingefügt werden
-                    }
-                }) {
-                    Text("Login")
-                        .font(.body)
-                        .foregroundColor(.white)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
+                Button {
+                } label: {
+                    Text("Sign Up")
+                        .bold()
+                        .frame(width: 200, height: 40)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(.linearGradient(colors: [.red, .orange], startPoint:
+                                .top, endPoint: .bottomTrailing))
+                      )
                 }
+                .padding(.top)
+                .offset(y: 110)
+                
+                Button {
+                    // login
+                } label: {
+                    Text("Already have an Account? Login")
+                        .bold()
+                        .foregroundColor(Color.white)
+                }
+                .padding(.top)
+                .offset(y: 110)
             }
+            .frame(width: 350)
         }
-        .padding()
+        .ignoresSafeArea()
+    }
+}
+
+struct LoginView_Previews: PreviewProvider {
+    static var previews: some View {
+        LoginView()
+    }
+}
+
+extension View {
+    func placeholder<Content: View>(
+        when shouldShow: Bool,
+        alignment: Alignment = .leading,
+        @ViewBuilder placeholder: () -> Content) -> some View {
+            
+            ZStack(alignment: alignment) {
+                placeholder().opacity(shouldShow ? 1 : 0)
+                self
+                
+            }
+    }
+}
+
+
+func signUp(email : String , password : String){
+    Auth.auth().createUser(withEmail: email, password: password){
+        result, error in
+        if let error = error{
+            print("an error occured \(error)")
+            return
+        }
+    }
+}
+
+func signIn(email : String , password : String){
+    Auth.auth().signIn(withEmail: email, password: password){
+        result, error in
+        if let error = error{
+            print("an error occured \(error)")
+            return
+        }
+        
     }
 }

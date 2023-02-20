@@ -1,13 +1,9 @@
-//
-//  MainView.swift
-//  StudygoesOnWorldTrip
-//
-//  Created by Marcel Zimmermann on 07.02.23.
-//
-
 import SwiftUI
 
 struct MainView: View {
+    
+    @EnvironmentObject var authService : AuthService
+
     @State var text: String = ""
     @State private var showNavbar = false
     
@@ -30,6 +26,11 @@ struct MainView: View {
             }
             
             VStack {
+                
+                Text("Hallo, \(authService.user?.email ?? "")!")
+                Button("Log Out"){
+                    authService.signOut()
+                }
                 
                 Text("Roma")
                     .foregroundColor(Color.white)
@@ -126,6 +127,5 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
-    }
+        MainView().environmentObject(AuthService())    }
 }

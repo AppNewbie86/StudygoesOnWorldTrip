@@ -25,7 +25,7 @@ struct ReiseZieleView: View {
                         hotelStars: item.hotelStars,
                         reiseImage: item.reiseImage)
                 })
-            }.navigationTitle("ReiseZiele")
+            }.navigationTitle("Top Reisen")
         }
         
     }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ReiseZieleViewModel: ObservableObject {
+@MainActor class ReiseZieleViewModel: ObservableObject {
     @Published var reiseZieleModels: [ReiseZieleModel] = []
     
     // Initialize the model
@@ -75,7 +75,7 @@ Selbst bei Weltreisen muss man sich auf einige Ziele festlegen. Deshalb werden v
         
         reiseZieleModels.append(
             ReiseZieleModel(
-            name: "Weltreise-Kreuzfahrt mit Queen Mary 2",
+            name: "Weltreise-Kreuzfahrt",
             hotelStars: 166,
             description: """
 **Bezeichnung**
@@ -101,7 +101,7 @@ Unterhaltungsprogramm an Bord
         
         reiseZieleModels.append(
             ReiseZieleModel(
-            name: "Singapur",
+            name: "USA",
             hotelStars: 237,
             description: """
 **Bezeichnung**
@@ -113,7 +113,7 @@ Wenn Sie etwas unternehmen möchten, sind diese beliebten Sehenswürdigkeiten ei
 
 Genießen Sie Ihren Aufenthalt in Singapur!
 """,
-            reiseImage: "b7698cc39824f2f24d3b0089381e5eaf22d7ccd3-3800x1000",
+            reiseImage: "burjKahlifa",
             reiseURL: "https://www.silversea.com/lp-silversea-hrts-consumer-11.html")
         )
 
@@ -121,7 +121,7 @@ Genießen Sie Ihren Aufenthalt in Singapur!
         
         reiseZieleModels.append(
             ReiseZieleModel(
-            name: "Hummus",
+            name: "Greece",
             hotelStars: 322,
             description: """
 **Bezeichnung**
@@ -137,48 +137,43 @@ Genießen Sie Ihren Aufenthalt in Singapur!
 - Dash ground paprika or sumac
 
 """,
-            reiseImage: "IMGhummus",
-            reiseURL: "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/")
+            reiseImage: "greece",
+            reiseURL: "https://www.airbnb.de/rooms/40171070?adults=2&category_tag=Tag%3A677&children=0&infants=0&pets=0&check_in=2023-02-27&check_out=2023-03-04&federated_search_id=c98cab04-0a1e-4a12-81d4-b66d38e91f8f&source_impression_id=p3_1676526137_KGGzDniU9vcsiNC6")
         )
         
         reiseZieleModels.append(
             ReiseZieleModel(
-            name: "Homemade Pizza",
+            name: "Thailand",
             hotelStars: 166,
             description: """
 **Bezeichnung**
 
-- 1 1/2 cups (355 ml) warm water (105°F-115°F)
-- 1 package (2 1/4 teaspoons) active dry yeast
-- 3 3/4 cups (490g) bread flour
-- 2 tablespoons extra virgin olive oil (omit if cooking pizza in a wood-fired pizza oven)
-- 2 teaspoons kosher salt
-- 1 teaspoon sugar
-- Extra virgin olive oil
-- Cornmeal (to help slide the pizza onto the pizza stone)
-- Tomato sauce (smooth or pureed)
-- Firm mozzarella cheese, grated
-- Fresh soft mozzarella cheese, separated into small clumps
-- Fontina cheese, grated
+- Über diese Unterkunft
+4 Schlafzimmer zu Hause, 4 Badezimmer, Küche, Wohnzimmer, Karaoke mit privatem Pool haben Parkplatz am Partyhaus.
+Um für Ihre Familie zu kochen, können Sie nur 2 Kilometer reisen, um frisches Essen zu kaufen, oder nur 7 Kilometer nach Hua Hin. Liefern Sie Lebensmittel können auch über Food Panda, Grab Food bestellt werden.
+Die Unterkunft
+Eine Villa mit natürlichem Blick auf das Haus und einem großen Bergblick, wenn man vom Privathaus aus blickt, ist im Art-Deco-Stil gehalten. Entworfen von den Eigentümern selbst, hat es einen anderen Stil als andere Häuser, aber das Interieur ist so eingerichtet, dass es sich wie ein Zuhause anfühlt. Die Außenseite hat einen langen Korridor am Pool, eine Esszone mit Kochnische.
 """,
-            reiseImage: "IMGPizza",
-            reiseURL: "https://www.simplyrecipes.com/recipes/homemade_pizza/")
+            reiseImage: "tailand",
+            reiseURL: "https://www.airbnb.de/rooms/40171070?adults=2&category_tag=Tag%3A677&children=0&infants=0&pets=0&check_in=2023-02-27&check_out=2023-03-04&federated_search_id=c98cab04-0a1e-4a12-81d4-b66d38e91f8f&source_impression_id=p3_1676526137_KGGzDniU9vcsiNC6")
         )
         
         
         reiseZieleModels.append(
             ReiseZieleModel(
-            name: "Apple Pie",
+            name: "Spanien",
             hotelStars: 237,
             description: """
 **Bezeichnung**
-- granulated sugar, only 3 tablespoons for the whole pie!
-- thinly sliced apples, it'll take about 8-10 medium apples
-- just a bit of butter and cinnamon
-- Double pie crust
+- Über diese Unterkunft
+Schöne architektonisch gestaltete Villa mit 4 Schlafzimmern, Infinity-Pool und Blick von Boden zu Decke in fast jedem Zimmer auf das Meer und Cap de Creus Nationalpark, in einem schönen arbeitenden Fischerdorf in Nordspanien.
+Die Unterkunft
+Das Haus wurde in der New York Times und in Wallpaper vorgestellt.
+Lizenznummer
+HUTG-014398
 """,
-            reiseImage: "IMGApplePie",
-            reiseURL: "https://www.blessthismessplease.com/basic-apple-pie-recipe/")
+            reiseImage: "spain",
+            reiseURL: "https://www.airbnb.de/s/Spain/homes?flexible_trip_lengths%5B%5D=one_week&query=Spanien&place_id=ChIJi7xhMnjjQgwR7KNoB5Qs7KY&refinement_paths%5B%5D=%2Fhomes&tab_id=home_tab&date_picker_type=calendar&source=structured_search_input_header&search_type=autocomplete_click")
         )
 
 

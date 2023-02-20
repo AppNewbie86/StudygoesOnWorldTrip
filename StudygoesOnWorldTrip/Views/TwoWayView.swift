@@ -9,55 +9,128 @@ import SwiftUI
 struct TwoWayView: View {
     @State private var selectedOption = 1
     @State private var showOnboardingView = false
-    @State private var showRegisterView = false
+    @State private var showLoginView = false
+    @State private var showAllgemeineInfosView = false
+    @State private var showCoronaInfos = false
+    @State private var showDokumente = false
 
+
+    
     var body: some View {
-        VStack(spacing: 20) {
-            ZStack {
-                Image("dream")
-                    .resizable()
-                    .frame(width: 400, height: 400)
+        ZStack {
+            Image("flughafenhinter")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .opacity(0.6)
+
+            
+            VStack {
+                Spacer()
+                
+                Text("Plan your next Trip")
+                    .font(.system(size: 50))
+                    .foregroundColor(.orange)
 
                 
-                VStack(spacing: 20) {
-                    Text("Wähle eine Option aus:")
-                        .font(.headline)
-                    
-                    HStack(spacing: 20) {
+                
+                
+                VStack {
+                    HStack {
                         Button(action: {
-                            self.selectedOption = 1
                             self.showOnboardingView = true
                         }) {
-                            Text("Onboarding")
+                            Text("App Konzept")
                                 .font(.body)
-                                .foregroundColor(selectedOption == 1 ? .white : .black)
+                                .foregroundColor(Color.white)
                                 .padding()
-                                .background(selectedOption == 1 ? Color.blue : Color.gray)
+                                .opacity(0.6)
+
+                                .frame(width: 150, height: 150)
+                                .background(Color.orange)
                                 .cornerRadius(10)
-                            
-                                .sheet(isPresented: $showOnboardingView) {
-                                    OnboardingView()
-                                }
-                            
-                            Button(action: {
-                                self.selectedOption = 2
-                                self.showRegisterView = true
-                            }) {
-                                Text("Register")
-                                    .font(.body)
-                                    .foregroundColor(selectedOption == 2 ? .white : .black)
-                                    .padding()
-                                    .background(selectedOption == 2 ? Color.blue : Color.gray)
-                                    .cornerRadius(10)
-                                
-                                    .sheet(isPresented: $showRegisterView) {
-                                        RegisterView()
-                                    }
-                            }
+                        }
+                        .sheet(isPresented: $showOnboardingView) {
+                            OnboardingView()
+                        }
+                        
+                        Button(action: {
+                            self.showLoginView = true
+                        }) {
+                            Text("Registrieren")
+                                .font(.body)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .opacity(0.6)
+
+                                .frame(width: 150, height: 150)
+                                .background(Color.orange)
+                                .cornerRadius(10)
+                        }
+                        .sheet(isPresented: $showLoginView) {
+                            LoginView()
+                        }
+                    }
+                    HStack {
+                        
+                        
+                        Button(action: {
+                            self.showAllgemeineInfosView = true
+                        }) {
+                            Text("Dokumente")
+                                .font(.body)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .opacity(0.6)
+
+                                .frame(width: 150, height: 150)
+                                .background(Color.orange)
+                                .cornerRadius(10)
+                        }
+                        .sheet(isPresented: $showAllgemeineInfosView) {
+                            AllgemeineInfosView()
+                        }
+                    }
+                    
+                        
+                        Button(action: {
+                            self.showCoronaInfos = true
+                        }) {
+                            Text("Länderbestimmungen")
+                                .font(.body)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .opacity(0.6)
+
+                                .frame(width: 150, height: 150)
+                                .background(Color.orange)
+                                .cornerRadius(10)
+                        }
+                        .sheet(isPresented: $showCoronaInfos) {
+                            showCoronaInfosView()
+                        }
+                        
+                        Button(action: {
+                            self.showDokumente = true
+                        }) {
+                            Text("Impfstatus")
+                                .font(.body)
+                                .foregroundColor(Color.white)
+                                .padding()
+                                .opacity(0.6)
+
+                                .frame(width: 150, height: 150)
+                                .background(Color.gray)
+                                .cornerRadius(10)
+                        }
+                        .sheet(isPresented: $showDokumente) {
+                            ShowDokumenteView()
                         }
                     }
                 }
+                .padding()
+                Spacer()
             }
         }
     }
-}
+

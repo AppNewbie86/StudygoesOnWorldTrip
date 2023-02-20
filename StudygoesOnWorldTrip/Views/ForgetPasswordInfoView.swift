@@ -1,14 +1,9 @@
-//
-//  ForgetPasswordInfoView.swift
-//  StudygoesOnWorldTrip
-//
-//  Created by Marcel Zimmermann on 07.02.23.
-//
-
 import SwiftUI
 
 struct ForgetPasswordInfoView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+
     @State private var reiseInfo = ""
     @State private var reiseInfos = ""
 
@@ -18,24 +13,32 @@ struct ForgetPasswordInfoView: View {
     
     var body: some View {
         VStack {
-            Text("Passwortinfos")
+            Text("Infos")
                 .font(.system(size: 30))
                 .foregroundColor(Color.orange)
-            Text("Info View.")
                 .padding()
-                .lineLimit(nil)
-            
-          
-                Text("Sie erhalten in Kürze eine Email folgen Sie bitte den Anweisungen")
-                    .font(.system(size: 20))
-                    .multilineTextAlignment(.center)
-            
+
+            Text("Sie erhalten in Kürze \n eine Email \n folgen Sie bitte den Anweisungen")
+                .font(.system(size: 15))
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.white)
+
+            Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Text("OK")
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(Color.orange)
+            .cornerRadius(25)
+            .padding()
         }
+        .background(Color.gray)
+        .frame(width: 400, height: 200)
+        .cornerRadius(25)
     }
 }
-
-
-
 
 struct ForgetPasswordInfoView_Previews: PreviewProvider {
     static var previews: some View {

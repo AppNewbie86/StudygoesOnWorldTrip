@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NavigationBar: View {
     var body: some View {
-        VStack(spacing: 70) {
+        VStack(spacing: 60) {
             ForEach(0..<4, id: \.self) { item in
                 Button(action: {
                     // Do something here
@@ -17,15 +17,17 @@ struct NavigationBar: View {
                     VStack {
                         Image(systemName: "person.crop.circle")
                             .imageScale(.small)
-                            .foregroundColor(Color.red)
-                        Text("rfdfd")
+                            .foregroundColor(Color.gray)
+                        Text("Profil")
+                            .foregroundColor(Color.orange)
+
                     }
                 }
             }
         }
         .padding()
-        .background(Color.gray.opacity(0.8))
-        .frame(width: 200, height: UIScreen.main.bounds.height)
+        .background(Color.pink.opacity(0.8))
+        .frame(width: 250, height: UIScreen.main.bounds.height)
         .shadow(radius: 10)
     }
 }

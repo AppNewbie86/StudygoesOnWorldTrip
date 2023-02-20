@@ -11,25 +11,32 @@ import SwiftUI
 struct OnboardingView: View {
     var body: some View {
         Group {
-            Color.blue.opacity(0.1)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-            
             TabView {
-                Text("Abflug")
+                Image("pic1")
+                    .resizable()
                     .tabItem {
                         Image(systemName: "airplane.departure")
+
                         Text("Abflug")
+                            .foregroundColor(Color.orange)
+
                     }
                 
-                Text("Der Flug")
+                Image("flyregeln")
+                    .resizable()
                     .tabItem {
                         Image(systemName: "airplane")
+                            .foregroundColor(Color.orange)
+
                         Text("Flug")
                     }
                 
-                Text("Die Landung")
+                Image("flughafen")
+                    .resizable()
                     .tabItem {
                         Image(systemName: "airplane.arrival")
+                            .foregroundColor(Color.orange)
+
                         Text("Landung")
                     }
                 

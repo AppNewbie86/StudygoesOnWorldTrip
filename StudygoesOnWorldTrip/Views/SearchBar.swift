@@ -12,11 +12,13 @@ struct SearchBar: View {
     
     var body: some View {
         HStack {
-            TextField("Where are you going?", text: $text)
-                .padding(8)
-                .background(Color(.secondarySystemBackground))
-                .cornerRadius(10)
-                .padding(.leading, 10)
+            TextField("Was können wir für sie tun ?", text: $text)
+                .textFieldStyle(PlainTextFieldStyle())
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.orange, lineWidth: 3)
+                )
             if !text.isEmpty {
                 Button(action: {
                     self.text = ""

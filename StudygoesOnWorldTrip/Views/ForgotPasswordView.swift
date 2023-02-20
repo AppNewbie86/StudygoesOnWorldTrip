@@ -30,7 +30,7 @@ struct ForgotPasswordView: View {
                 
                 Text("Forgot your Password")
                     .font(.system(size:30)) // macht text kleiner
-                    .foregroundColor(Color.yellow)
+                    .foregroundColor(Color.orange)
                     .position(x:200, y:50)
                 VStack {
        
@@ -46,12 +46,16 @@ struct ForgotPasswordView: View {
                         .foregroundColor(Color.white)
                     
                     ZStack {
-                        TextField("Your email ", text: $email)
+                        TextField("Email", text: $email)
+                            .textFieldStyle(PlainTextFieldStyle())
+                            .frame(width:350)
+
                             .padding()
-                            .cornerRadius(5.0)
-                            .shadow(radius: 5.0)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color.gray, lineWidth: 1)
+                            )
+                        
                         
                         
                     }
@@ -61,6 +65,7 @@ struct ForgotPasswordView: View {
                         self.showNextView40 = true
                     }) {
                         Text("send")
+                            .foregroundColor(Color.orange)
                     }
                     .sheet(isPresented: $showNextView40) {
                         ForgetPasswordInfoView()
