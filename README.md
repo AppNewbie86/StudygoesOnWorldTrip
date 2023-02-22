@@ -14,5 +14,18 @@ I would like to let you participate in my final project in Swift UI and as far a
 I hope you enjoy reading and following. Of course I will keep you up to date and also show you all the built-in features
 
 
+Update:
+
+I have implemented the TabView today where you get to different views of the app
+
+API Call
+
+I have implemented a job finder that allows students from anywhere to respond to current job offers abroad
+
+ViewModel
+
+implementation of a ViewModel that separates the UI from the logic
+
+
 
 
