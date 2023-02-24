@@ -7,85 +7,76 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E743F3CA2998EB3B00D86A3E /* ReiseZieleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3C92998EB3B00D86A3E /* ReiseZieleView.swift */; };
-		E743F3CC2998EBA000D86A3E /* ShowReiseZieleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3CB2998EBA000D86A3E /* ShowReiseZieleView.swift */; };
-		E743F3CF2998EBF300D86A3E /* ReiseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3CE2998EBF300D86A3E /* ReiseViewModel.swift */; };
-		E743F3D22998EC6D00D86A3E /* ReiseZieleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3D12998EC6D00D86A3E /* ReiseZieleModel.swift */; };
-		E743F3D42998EC9900D86A3E /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3D32998EC9900D86A3E /* States.swift */; };
-		E743F3D62998ECE700D86A3E /* Zielflughäfen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3D52998ECE700D86A3E /* Zielflughäfen.swift */; };
-		E743F3D82998ED1100D86A3E /* Startflughafen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3D72998ED1100D86A3E /* Startflughafen.swift */; };
-		E743F3DA2998ED5A00D86A3E /* Reiseangebot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3D92998ED5A00D86A3E /* Reiseangebot.swift */; };
-		E743F3DC2998ED7000D86A3E /* Personen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3DB2998ED7000D86A3E /* Personen.swift */; };
-		E743F3DE2998EDAE00D86A3E /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3DD2998EDAE00D86A3E /* ListItemView.swift */; };
-		E743F3E02998EF9100D86A3E /* ReiseZieleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E743F3DF2998EF9100D86A3E /* ReiseZieleViewModel.swift */; };
-		E79AA20C29928B94002C42A8 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AA20B29928B94002C42A8 /* NavigationBar.swift */; };
-		E79AA20E29929811002C42A8 /* BookingProcessTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79AA20D29929811002C42A8 /* BookingProcessTabView.swift */; };
-		E7A3513A299E071100B0C327 /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A35139299E071100B0C327 /* JobViewModel.swift */; };
-		E7A3513C299E075500B0C327 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3513B299E075500B0C327 /* JobModel.swift */; };
-		E7A35140299E093D00B0C327 /* ShowJobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A3513F299E093D00B0C327 /* ShowJobView.swift */; };
-		E7A35142299E09A700B0C327 /* ListItemView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A35141299E09A700B0C327 /* ListItemView2.swift */; };
-		E7A35144299E162B00B0C327 /* JobAngeboteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A35143299E162B00B0C327 /* JobAngeboteView.swift */; };
-		E7A35148299E455800B0C327 /* ShowDokumenteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A35147299E455800B0C327 /* ShowDokumenteView.swift */; };
-		E7A351A3299FBDE900B0C327 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A351A2299FBDE900B0C327 /* AuthService.swift */; };
+		E72EEE6F29A773B8008C93BB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE6E29A773B8008C93BB /* Utils.swift */; };
+		E72EEE7229A7B1EF008C93BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7129A7B1EF008C93BB /* LoginView.swift */; };
+		E72EEE7429A7B288008C93BB /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7329A7B288008C93BB /* FormField.swift */; };
+		E72EEE7629A7B2BD008C93BB /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7529A7B2BD008C93BB /* LogoView.swift */; };
+		E72EEE7829A7B2F2008C93BB /* LogoShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7729A7B2F2008C93BB /* LogoShape.swift */; };
+		E72EEE7B29A7B364008C93BB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7A29A7B364008C93BB /* ForgotPasswordView.swift */; };
+		E72EEE7D29A7B389008C93BB /* ForgetPasswordInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72EEE7C29A7B389008C93BB /* ForgetPasswordInfoView.swift */; };
+		E74DF3A029A65937007AA084 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF39F29A65937007AA084 /* Model.swift */; };
+		E74DF3A329A65A51007AA084 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3A229A65A51007AA084 /* RoundedShape.swift */; };
+		E74DF3A629A65AC8007AA084 /* tabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3A529A65AC8007AA084 /* tabButton.swift */; };
+		E74DF3A829A65B34007AA084 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3A729A65B34007AA084 /* MainView.swift */; };
+		E74DF3AA29A65B74007AA084 /* ProfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3A929A65B74007AA084 /* ProfilView.swift */; };
+		E74DF3AC29A65BC6007AA084 /* JobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3AB29A65BC6007AA084 /* JobView.swift */; };
+		E74DF3AE29A65BE3007AA084 /* PlaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3AD29A65BE3007AA084 /* PlaneView.swift */; };
+		E74DF3B029A65C05007AA084 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3AF29A65C05007AA084 /* HomeView.swift */; };
+		E74DF3B229A65F3E007AA084 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3B129A65F3E007AA084 /* DetailView.swift */; };
+		E74DF3B529A6AE40007AA084 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3B429A6AE40007AA084 /* EmptyStateView.swift */; };
+		E74DF3B729A6AE8E007AA084 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3B629A6AE8E007AA084 /* SearchBar.swift */; };
+		E74DF3B929A6AEE3007AA084 /* JobListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3B829A6AEE3007AA084 /* JobListViewModel.swift */; };
+		E74DF3BB29A6AF2D007AA084 /* JobView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3BA29A6AF2D007AA084 /* JobView2.swift */; };
+		E74DF3BD29A6AF63007AA084 /* JobModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3BC29A6AF63007AA084 /* JobModel.swift */; };
+		E74DF3BF29A6AFAA007AA084 /* JobDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3BE29A6AFAA007AA084 /* JobDetailView.swift */; };
+		E74DF3C129A6B013007AA084 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74DF3C029A6B013007AA084 /* ModelData.swift */; };
+		E74DF3C429A6B0AA007AA084 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E74DF3C329A6B0AA007AA084 /* Alamofire */; };
+		E74DF3C729A6B4FC007AA084 /* mixkit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E74DF3C629A6B4FC007AA084 /* mixkit.mp3 */; };
 		E7A351A6299FBF6A00B0C327 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E7A351A5299FBF6A00B0C327 /* FirebaseAuth */; };
-		E7A351A8299FC89F00B0C327 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7A351A7299FC89F00B0C327 /* GoogleService-Info.plist */; };
-		E7B19197299DA89A0077F01B /* AllgemeineInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B19196299DA89A0077F01B /* AllgemeineInfosView.swift */; };
-		E7B19199299DA8D40077F01B /* showCoronaInfosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B19198299DA8D40077F01B /* showCoronaInfosView.swift */; };
+		E7EC0C5329A8BA6400C877B6 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */; };
+		E7EC0C5829A8EA4300C877B6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E7EC0C5729A8EA4300C877B6 /* SwiftyJSON */; };
+		E7EC0C6929A8FBC800C877B6 /* OriginalFlightEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */; };
+		E7EC0C6B29A8FC9600C877B6 /* FlightEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */; };
+		E7EC0C7329A8FFA300C877B6 /* Amadeus in Frameworks */ = {isa = PBXBuildFile; productRef = E7EC0C7229A8FFA300C877B6 /* Amadeus */; };
 		E7F166132991CAC300483E25 /* StudygoesOnWorldTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166122991CAC300483E25 /* StudygoesOnWorldTripApp.swift */; };
 		E7F166152991CAC300483E25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166142991CAC300483E25 /* ContentView.swift */; };
 		E7F166172991CAC400483E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F166162991CAC400483E25 /* Assets.xcassets */; };
 		E7F1661A2991CAC400483E25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F166192991CAC400483E25 /* Preview Assets.xcassets */; };
-		E7F166242991CD4E00483E25 /* TwoWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166232991CD4E00483E25 /* TwoWayView.swift */; };
-		E7F166262991CFFB00483E25 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166252991CFFB00483E25 /* LoginView.swift */; };
-		E7F166282991D07600483E25 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166272991D07600483E25 /* ForgotPasswordView.swift */; };
-		E7F1662A2991D17500483E25 /* ForgetPasswordInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166292991D17500483E25 /* ForgetPasswordInfoView.swift */; };
-		E7F1662C2991DEC800483E25 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1662B2991DEC800483E25 /* OnboardingView.swift */; };
-		E7F1662E2991E1C700483E25 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1662D2991E1C700483E25 /* FirstTabView.swift */; };
-		E7F166302991E1F200483E25 /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F1662F2991E1F200483E25 /* SecondTabView.swift */; };
-		E7F166322991E21600483E25 /* ThreeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166312991E21600483E25 /* ThreeTabView.swift */; };
-		E7F166382991EAAF00483E25 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166372991EAAF00483E25 /* MainView.swift */; };
-		E7F1663A2991EB8100483E25 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166392991EB8100483E25 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E743F3C92998EB3B00D86A3E /* ReiseZieleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiseZieleView.swift; sourceTree = "<group>"; };
-		E743F3CB2998EBA000D86A3E /* ShowReiseZieleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowReiseZieleView.swift; sourceTree = "<group>"; };
-		E743F3CE2998EBF300D86A3E /* ReiseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiseViewModel.swift; sourceTree = "<group>"; };
-		E743F3D12998EC6D00D86A3E /* ReiseZieleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiseZieleModel.swift; sourceTree = "<group>"; };
-		E743F3D32998EC9900D86A3E /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
-		E743F3D52998ECE700D86A3E /* Zielflughäfen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Zielflughäfen.swift"; sourceTree = "<group>"; };
-		E743F3D72998ED1100D86A3E /* Startflughafen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Startflughafen.swift; sourceTree = "<group>"; };
-		E743F3D92998ED5A00D86A3E /* Reiseangebot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reiseangebot.swift; sourceTree = "<group>"; };
-		E743F3DB2998ED7000D86A3E /* Personen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personen.swift; sourceTree = "<group>"; };
-		E743F3DD2998EDAE00D86A3E /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
-		E743F3DF2998EF9100D86A3E /* ReiseZieleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiseZieleViewModel.swift; sourceTree = "<group>"; };
-		E79AA20B29928B94002C42A8 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
-		E79AA20D29929811002C42A8 /* BookingProcessTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingProcessTabView.swift; sourceTree = "<group>"; };
-		E7A35139299E071100B0C327 /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
-		E7A3513B299E075500B0C327 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
-		E7A3513F299E093D00B0C327 /* ShowJobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowJobView.swift; sourceTree = "<group>"; };
-		E7A35141299E09A700B0C327 /* ListItemView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView2.swift; sourceTree = "<group>"; };
-		E7A35143299E162B00B0C327 /* JobAngeboteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobAngeboteView.swift; sourceTree = "<group>"; };
-		E7A35147299E455800B0C327 /* ShowDokumenteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDokumenteView.swift; sourceTree = "<group>"; };
-		E7A351A2299FBDE900B0C327 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		E7A351A7299FC89F00B0C327 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E7B19196299DA89A0077F01B /* AllgemeineInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllgemeineInfosView.swift; sourceTree = "<group>"; };
-		E7B19198299DA8D40077F01B /* showCoronaInfosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showCoronaInfosView.swift; sourceTree = "<group>"; };
+		E72EEE6E29A773B8008C93BB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E72EEE7129A7B1EF008C93BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E72EEE7329A7B288008C93BB /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		E72EEE7529A7B2BD008C93BB /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		E72EEE7729A7B2F2008C93BB /* LogoShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoShape.swift; sourceTree = "<group>"; };
+		E72EEE7A29A7B364008C93BB /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		E72EEE7C29A7B389008C93BB /* ForgetPasswordInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordInfoView.swift; sourceTree = "<group>"; };
+		E74DF39F29A65937007AA084 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E74DF3A229A65A51007AA084 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		E74DF3A529A65AC8007AA084 /* tabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabButton.swift; sourceTree = "<group>"; };
+		E74DF3A729A65B34007AA084 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E74DF3A929A65B74007AA084 /* ProfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilView.swift; sourceTree = "<group>"; };
+		E74DF3AB29A65BC6007AA084 /* JobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView.swift; sourceTree = "<group>"; };
+		E74DF3AD29A65BE3007AA084 /* PlaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneView.swift; sourceTree = "<group>"; };
+		E74DF3AF29A65C05007AA084 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E74DF3B129A65F3E007AA084 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E74DF3B429A6AE40007AA084 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		E74DF3B629A6AE8E007AA084 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		E74DF3B829A6AEE3007AA084 /* JobListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobListViewModel.swift; sourceTree = "<group>"; };
+		E74DF3BA29A6AF2D007AA084 /* JobView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobView2.swift; sourceTree = "<group>"; };
+		E74DF3BC29A6AF63007AA084 /* JobModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobModel.swift; sourceTree = "<group>"; };
+		E74DF3BE29A6AFAA007AA084 /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
+		E74DF3C029A6B013007AA084 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		E74DF3C629A6B4FC007AA084 /* mixkit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mixkit.mp3; path = ../../../mixkit.mp3; sourceTree = "<group>"; };
+		E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
+		E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFlightEndPoint.swift; sourceTree = "<group>"; };
+		E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEndPoint.swift; sourceTree = "<group>"; };
 		E7F1660F2991CAC300483E25 /* StudygoesOnWorldTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudygoesOnWorldTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F166122991CAC300483E25 /* StudygoesOnWorldTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudygoesOnWorldTripApp.swift; sourceTree = "<group>"; };
 		E7F166142991CAC300483E25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7F166162991CAC400483E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F166192991CAC400483E25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E7F166232991CD4E00483E25 /* TwoWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoWayView.swift; sourceTree = "<group>"; };
-		E7F166252991CFFB00483E25 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		E7F166272991D07600483E25 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		E7F166292991D17500483E25 /* ForgetPasswordInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordInfoView.swift; sourceTree = "<group>"; };
-		E7F1662B2991DEC800483E25 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		E7F1662D2991E1C700483E25 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
-		E7F1662F2991E1F200483E25 /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
-		E7F166312991E21600483E25 /* ThreeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeTabView.swift; sourceTree = "<group>"; };
-		E7F166372991EAAF00483E25 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		E7F166392991EB8100483E25 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,36 +84,132 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EC0C5829A8EA4300C877B6 /* SwiftyJSON in Frameworks */,
 				E7A351A6299FBF6A00B0C327 /* FirebaseAuth in Frameworks */,
+				E74DF3C429A6B0AA007AA084 /* Alamofire in Frameworks */,
+				E7EC0C7329A8FFA300C877B6 /* Amadeus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E72EEE6D29A7739D008C93BB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E72EEE6E29A773B8008C93BB /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E72EEE7029A7B1D6008C93BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E72EEE7129A7B1EF008C93BB /* LoginView.swift */,
+				E72EEE7329A7B288008C93BB /* FormField.swift */,
+				E72EEE7529A7B2BD008C93BB /* LogoView.swift */,
+				E72EEE7729A7B2F2008C93BB /* LogoShape.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E72EEE7929A7B32D008C93BB /* ForgotPasswort */ = {
+			isa = PBXGroup;
+			children = (
+				E72EEE7A29A7B364008C93BB /* ForgotPasswordView.swift */,
+				E72EEE7C29A7B389008C93BB /* ForgetPasswordInfoView.swift */,
+			);
+			path = ForgotPasswort;
+			sourceTree = "<group>";
+		};
 		E743F3CD2998EBC000D86A3E /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				E743F3CE2998EBF300D86A3E /* ReiseViewModel.swift */,
-				E743F3DF2998EF9100D86A3E /* ReiseZieleViewModel.swift */,
-				E7A35139299E071100B0C327 /* JobViewModel.swift */,
+				E74DF3B829A6AEE3007AA084 /* JobListViewModel.swift */,
+				E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		E743F3D02998EC4E00D86A3E /* Models */ = {
+		E74DF39E29A65921007AA084 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E743F3D12998EC6D00D86A3E /* ReiseZieleModel.swift */,
-				E743F3D32998EC9900D86A3E /* States.swift */,
-				E743F3D52998ECE700D86A3E /* Zielflughäfen.swift */,
-				E743F3D72998ED1100D86A3E /* Startflughafen.swift */,
-				E743F3D92998ED5A00D86A3E /* Reiseangebot.swift */,
-				E743F3DB2998ED7000D86A3E /* Personen.swift */,
-				E7A3513B299E075500B0C327 /* JobModel.swift */,
-				E7A351A2299FBDE900B0C327 /* AuthService.swift */,
+				E74DF39F29A65937007AA084 /* Model.swift */,
+				E74DF3BC29A6AF63007AA084 /* JobModel.swift */,
+				E74DF3C029A6B013007AA084 /* ModelData.swift */,
+				E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */,
+				E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E74DF3A129A65A3D007AA084 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3A229A65A51007AA084 /* RoundedShape.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		E74DF3A429A65AB7007AA084 /* TabButtons */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3A529A65AC8007AA084 /* tabButton.swift */,
+			);
+			path = TabButtons;
+			sourceTree = "<group>";
+		};
+		E74DF3B329A6AE22007AA084 /* Job */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3AB29A65BC6007AA084 /* JobView.swift */,
+				E74DF3B429A6AE40007AA084 /* EmptyStateView.swift */,
+				E74DF3B629A6AE8E007AA084 /* SearchBar.swift */,
+				E74DF3BA29A6AF2D007AA084 /* JobView2.swift */,
+				E74DF3BE29A6AFAA007AA084 /* JobDetailView.swift */,
+			);
+			path = Job;
+			sourceTree = "<group>";
+		};
+		E74DF3C529A6B431007AA084 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3C629A6B4FC007AA084 /* mixkit.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		E74DF3C829A6E9B4007AA084 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3A729A65B34007AA084 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E74DF3C929A6E9C0007AA084 /* Profil */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3A929A65B74007AA084 /* ProfilView.swift */,
+			);
+			path = Profil;
+			sourceTree = "<group>";
+		};
+		E74DF3CA29A6E9E6007AA084 /* Plane */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3AD29A65BE3007AA084 /* PlaneView.swift */,
+			);
+			path = Plane;
+			sourceTree = "<group>";
+		};
+		E74DF3CB29A6E9F3007AA084 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E74DF3B129A65F3E007AA084 /* DetailView.swift */,
+				E74DF3AF29A65C05007AA084 /* HomeView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		E7F166062991CAC300483E25 = {
@@ -144,8 +231,11 @@
 		E7F166112991CAC300483E25 /* StudygoesOnWorldTrip */ = {
 			isa = PBXGroup;
 			children = (
-				E7A351A7299FC89F00B0C327 /* GoogleService-Info.plist */,
-				E743F3D02998EC4E00D86A3E /* Models */,
+				E72EEE6D29A7739D008C93BB /* Utils */,
+				E74DF3C529A6B431007AA084 /* Sounds */,
+				E74DF3A429A65AB7007AA084 /* TabButtons */,
+				E74DF3A129A65A3D007AA084 /* Shapes */,
+				E74DF39E29A65921007AA084 /* Models */,
 				E743F3CD2998EBC000D86A3E /* ViewModels */,
 				E7F166202991CB0A00483E25 /* Views */,
 				E7F166122991CAC300483E25 /* StudygoesOnWorldTripApp.swift */,
@@ -167,27 +257,13 @@
 		E7F166202991CB0A00483E25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E7F166232991CD4E00483E25 /* TwoWayView.swift */,
-				E7F166252991CFFB00483E25 /* LoginView.swift */,
-				E7F166272991D07600483E25 /* ForgotPasswordView.swift */,
-				E7F166292991D17500483E25 /* ForgetPasswordInfoView.swift */,
-				E7F1662B2991DEC800483E25 /* OnboardingView.swift */,
-				E7F1662D2991E1C700483E25 /* FirstTabView.swift */,
-				E7F1662F2991E1F200483E25 /* SecondTabView.swift */,
-				E7F166312991E21600483E25 /* ThreeTabView.swift */,
-				E7F166372991EAAF00483E25 /* MainView.swift */,
-				E7F166392991EB8100483E25 /* SearchBar.swift */,
-				E79AA20B29928B94002C42A8 /* NavigationBar.swift */,
-				E79AA20D29929811002C42A8 /* BookingProcessTabView.swift */,
-				E743F3C92998EB3B00D86A3E /* ReiseZieleView.swift */,
-				E743F3CB2998EBA000D86A3E /* ShowReiseZieleView.swift */,
-				E743F3DD2998EDAE00D86A3E /* ListItemView.swift */,
-				E7B19196299DA89A0077F01B /* AllgemeineInfosView.swift */,
-				E7B19198299DA8D40077F01B /* showCoronaInfosView.swift */,
-				E7A3513F299E093D00B0C327 /* ShowJobView.swift */,
-				E7A35141299E09A700B0C327 /* ListItemView2.swift */,
-				E7A35143299E162B00B0C327 /* JobAngeboteView.swift */,
-				E7A35147299E455800B0C327 /* ShowDokumenteView.swift */,
+				E72EEE7929A7B32D008C93BB /* ForgotPasswort */,
+				E72EEE7029A7B1D6008C93BB /* Login */,
+				E74DF3CB29A6E9F3007AA084 /* Home */,
+				E74DF3CA29A6E9E6007AA084 /* Plane */,
+				E74DF3C929A6E9C0007AA084 /* Profil */,
+				E74DF3C829A6E9B4007AA084 /* Main */,
+				E74DF3B329A6AE22007AA084 /* Job */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +286,9 @@
 			name = StudygoesOnWorldTrip;
 			packageProductDependencies = (
 				E7A351A5299FBF6A00B0C327 /* FirebaseAuth */,
+				E74DF3C329A6B0AA007AA084 /* Alamofire */,
+				E7EC0C5729A8EA4300C877B6 /* SwiftyJSON */,
+				E7EC0C7229A8FFA300C877B6 /* Amadeus */,
 			);
 			productName = StudygoesOnWorldTrip;
 			productReference = E7F1660F2991CAC300483E25 /* StudygoesOnWorldTrip.app */;
@@ -241,6 +320,9 @@
 			mainGroup = E7F166062991CAC300483E25;
 			packageReferences = (
 				E7A351A4299FBF6A00B0C327 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E74DF3C229A6B0AA007AA084 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				E7EC0C5629A8EA4300C877B6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				E7EC0C7129A8FFA300C877B6 /* XCRemoteSwiftPackageReference "amadeus-ios" */,
 			);
 			productRefGroup = E7F166102991CAC300483E25 /* Products */;
 			projectDirPath = "";
@@ -257,8 +339,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F1661A2991CAC400483E25 /* Preview Assets.xcassets in Resources */,
+				E74DF3C729A6B4FC007AA084 /* mixkit.mp3 in Resources */,
 				E7F166172991CAC400483E25 /* Assets.xcassets in Resources */,
-				E7A351A8299FC89F00B0C327 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,40 +351,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E743F3CC2998EBA000D86A3E /* ShowReiseZieleView.swift in Sources */,
-				E7F166302991E1F200483E25 /* SecondTabView.swift in Sources */,
-				E7A35142299E09A700B0C327 /* ListItemView2.swift in Sources */,
-				E7A351A3299FBDE900B0C327 /* AuthService.swift in Sources */,
-				E7F166382991EAAF00483E25 /* MainView.swift in Sources */,
-				E743F3D62998ECE700D86A3E /* Zielflughäfen.swift in Sources */,
-				E743F3DA2998ED5A00D86A3E /* Reiseangebot.swift in Sources */,
-				E7F1663A2991EB8100483E25 /* SearchBar.swift in Sources */,
-				E743F3CF2998EBF300D86A3E /* ReiseViewModel.swift in Sources */,
-				E79AA20C29928B94002C42A8 /* NavigationBar.swift in Sources */,
-				E743F3E02998EF9100D86A3E /* ReiseZieleViewModel.swift in Sources */,
-				E7A35140299E093D00B0C327 /* ShowJobView.swift in Sources */,
+				E72EEE7429A7B288008C93BB /* FormField.swift in Sources */,
+				E74DF3B729A6AE8E007AA084 /* SearchBar.swift in Sources */,
+				E74DF3A029A65937007AA084 /* Model.swift in Sources */,
+				E74DF3B929A6AEE3007AA084 /* JobListViewModel.swift in Sources */,
+				E74DF3AA29A65B74007AA084 /* ProfilView.swift in Sources */,
+				E74DF3A829A65B34007AA084 /* MainView.swift in Sources */,
+				E7EC0C6B29A8FC9600C877B6 /* FlightEndPoint.swift in Sources */,
+				E74DF3BF29A6AFAA007AA084 /* JobDetailView.swift in Sources */,
+				E74DF3BD29A6AF63007AA084 /* JobModel.swift in Sources */,
+				E74DF3B029A65C05007AA084 /* HomeView.swift in Sources */,
+				E74DF3A629A65AC8007AA084 /* tabButton.swift in Sources */,
+				E72EEE7B29A7B364008C93BB /* ForgotPasswordView.swift in Sources */,
+				E74DF3B229A65F3E007AA084 /* DetailView.swift in Sources */,
+				E74DF3B529A6AE40007AA084 /* EmptyStateView.swift in Sources */,
+				E74DF3C129A6B013007AA084 /* ModelData.swift in Sources */,
+				E72EEE7629A7B2BD008C93BB /* LogoView.swift in Sources */,
+				E74DF3AE29A65BE3007AA084 /* PlaneView.swift in Sources */,
+				E7EC0C5329A8BA6400C877B6 /* FlightListViewModel.swift in Sources */,
 				E7F166152991CAC300483E25 /* ContentView.swift in Sources */,
-				E7A35148299E455800B0C327 /* ShowDokumenteView.swift in Sources */,
-				E7F166322991E21600483E25 /* ThreeTabView.swift in Sources */,
-				E743F3DC2998ED7000D86A3E /* Personen.swift in Sources */,
-				E7A35144299E162B00B0C327 /* JobAngeboteView.swift in Sources */,
-				E79AA20E29929811002C42A8 /* BookingProcessTabView.swift in Sources */,
-				E743F3D82998ED1100D86A3E /* Startflughafen.swift in Sources */,
-				E7F166262991CFFB00483E25 /* LoginView.swift in Sources */,
-				E743F3DE2998EDAE00D86A3E /* ListItemView.swift in Sources */,
-				E7A3513C299E075500B0C327 /* JobModel.swift in Sources */,
-				E7B19197299DA89A0077F01B /* AllgemeineInfosView.swift in Sources */,
-				E7B19199299DA8D40077F01B /* showCoronaInfosView.swift in Sources */,
-				E7A3513A299E071100B0C327 /* JobViewModel.swift in Sources */,
-				E7F166242991CD4E00483E25 /* TwoWayView.swift in Sources */,
-				E743F3CA2998EB3B00D86A3E /* ReiseZieleView.swift in Sources */,
-				E7F1662A2991D17500483E25 /* ForgetPasswordInfoView.swift in Sources */,
-				E7F1662C2991DEC800483E25 /* OnboardingView.swift in Sources */,
+				E7EC0C6929A8FBC800C877B6 /* OriginalFlightEndPoint.swift in Sources */,
 				E7F166132991CAC300483E25 /* StudygoesOnWorldTripApp.swift in Sources */,
-				E7F1662E2991E1C700483E25 /* FirstTabView.swift in Sources */,
-				E743F3D42998EC9900D86A3E /* States.swift in Sources */,
-				E743F3D22998EC6D00D86A3E /* ReiseZieleModel.swift in Sources */,
-				E7F166282991D07600483E25 /* ForgotPasswordView.swift in Sources */,
+				E72EEE7829A7B2F2008C93BB /* LogoShape.swift in Sources */,
+				E74DF3AC29A65BC6007AA084 /* JobView.swift in Sources */,
+				E74DF3BB29A6AF2D007AA084 /* JobView2.swift in Sources */,
+				E72EEE6F29A773B8008C93BB /* Utils.swift in Sources */,
+				E72EEE7D29A7B389008C93BB /* ForgetPasswordInfoView.swift in Sources */,
+				E72EEE7229A7B1EF008C93BB /* LoginView.swift in Sources */,
+				E74DF3A329A65A51007AA084 /* RoundedShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +579,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		E74DF3C229A6B0AA007AA084 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		E7A351A4299FBF6A00B0C327 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -511,13 +595,44 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		E7EC0C5629A8EA4300C877B6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		E7EC0C7129A8FFA300C877B6 /* XCRemoteSwiftPackageReference "amadeus-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppNewbie86/amadeus-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E74DF3C329A6B0AA007AA084 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E74DF3C229A6B0AA007AA084 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		E7A351A5299FBF6A00B0C327 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E7A351A4299FBF6A00B0C327 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E7EC0C5729A8EA4300C877B6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7EC0C5629A8EA4300C877B6 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		E7EC0C7229A8FFA300C877B6 /* Amadeus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7EC0C7129A8FFA300C877B6 /* XCRemoteSwiftPackageReference "amadeus-ios" */;
+			productName = Amadeus;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
