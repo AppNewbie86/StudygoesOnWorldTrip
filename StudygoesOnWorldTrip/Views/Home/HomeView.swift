@@ -18,22 +18,23 @@ struct HomeView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 
                 VStack {
-                    HStack {
-                        Text("We focus a lot on helping\nthe first time or\ninexperienced traveler head out")
-                            .font(.system(size:12))
-                            .foregroundColor(Color.black)
-                        
-                        Spacer(minLength: 0)
-                        
-                        Button(action: {}){
-                            Image(systemName: "magnifyingglass.circle.fill")
-                                .renderingMode(.template)
-                                .foregroundColor(.black)
-                                .padding()
-                                .clipShape(Circle())
-                        }
+                    Spacer()
+                    
+                    Text("We focus a lot on helping\nthe first time or\ninexperienced traveler head out")
+                        .font(.system(size:12))
+                        .foregroundColor(Color.black)
+                    
+                    Spacer(minLength: 0)
+                    
+                    Button(action: {}){
+                        Image(systemName: "magnifyingglass.circle.fill")
+                            .renderingMode(.template)
+                            .foregroundColor(.black)
+                            .padding()
+                            .clipShape(Circle())
                     }
-                    .padding()
+                }
+                .padding()
                     
                     
                     HStack {
@@ -90,8 +91,9 @@ struct HomeView: View {
                     }
                     
                 }
-            }
+                
+            }.ignoresSafeArea()
         }
-        .ignoresSafeArea()
+        
     }
-}
+

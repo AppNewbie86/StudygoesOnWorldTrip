@@ -33,15 +33,15 @@
 		E74DF3C429A6B0AA007AA084 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E74DF3C329A6B0AA007AA084 /* Alamofire */; };
 		E74DF3C729A6B4FC007AA084 /* mixkit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E74DF3C629A6B4FC007AA084 /* mixkit.mp3 */; };
 		E7A351A6299FBF6A00B0C327 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E7A351A5299FBF6A00B0C327 /* FirebaseAuth */; };
-		E7EC0C5329A8BA6400C877B6 /* FlightListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */; };
 		E7EC0C5829A8EA4300C877B6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = E7EC0C5729A8EA4300C877B6 /* SwiftyJSON */; };
-		E7EC0C6929A8FBC800C877B6 /* OriginalFlightEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */; };
-		E7EC0C6B29A8FC9600C877B6 /* FlightEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */; };
 		E7EC0C7329A8FFA300C877B6 /* Amadeus in Frameworks */ = {isa = PBXBuildFile; productRef = E7EC0C7229A8FFA300C877B6 /* Amadeus */; };
 		E7F166132991CAC300483E25 /* StudygoesOnWorldTripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166122991CAC300483E25 /* StudygoesOnWorldTripApp.swift */; };
 		E7F166152991CAC300483E25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F166142991CAC300483E25 /* ContentView.swift */; };
 		E7F166172991CAC400483E25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F166162991CAC400483E25 /* Assets.xcassets */; };
 		E7F1661A2991CAC400483E25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F166192991CAC400483E25 /* Preview Assets.xcassets */; };
+		E7FAEE2329A9A38700955400 /* FlightSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAEE2229A9A38700955400 /* FlightSearchViewModel.swift */; };
+		E7FAEE2E29A9DE6F00955400 /* HotelSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAEE2D29A9DE6F00955400 /* HotelSearchView.swift */; };
+		E7FAEE3129AA11B400955400 /* FlightProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FAEE3029AA11B400955400 /* FlightProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,14 +69,14 @@
 		E74DF3BE29A6AFAA007AA084 /* JobDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailView.swift; sourceTree = "<group>"; };
 		E74DF3C029A6B013007AA084 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		E74DF3C629A6B4FC007AA084 /* mixkit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mixkit.mp3; path = ../../../mixkit.mp3; sourceTree = "<group>"; };
-		E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightListViewModel.swift; sourceTree = "<group>"; };
-		E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginalFlightEndPoint.swift; sourceTree = "<group>"; };
-		E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightEndPoint.swift; sourceTree = "<group>"; };
 		E7F1660F2991CAC300483E25 /* StudygoesOnWorldTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudygoesOnWorldTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F166122991CAC300483E25 /* StudygoesOnWorldTripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudygoesOnWorldTripApp.swift; sourceTree = "<group>"; };
 		E7F166142991CAC300483E25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E7F166162991CAC400483E25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F166192991CAC400483E25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E7FAEE2229A9A38700955400 /* FlightSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewModel.swift; sourceTree = "<group>"; };
+		E7FAEE2D29A9DE6F00955400 /* HotelSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelSearchView.swift; sourceTree = "<group>"; };
+		E7FAEE3029AA11B400955400 /* FlightProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				E74DF3B829A6AEE3007AA084 /* JobListViewModel.swift */,
-				E7EC0C5229A8BA6400C877B6 /* FlightListViewModel.swift */,
+				E7FAEE2229A9A38700955400 /* FlightSearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -137,8 +137,6 @@
 				E74DF39F29A65937007AA084 /* Model.swift */,
 				E74DF3BC29A6AF63007AA084 /* JobModel.swift */,
 				E74DF3C029A6B013007AA084 /* ModelData.swift */,
-				E7EC0C6829A8FBC800C877B6 /* OriginalFlightEndPoint.swift */,
-				E7EC0C6A29A8FC9600C877B6 /* FlightEndPoint.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -212,6 +210,13 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		E7B078D629A980BF001EADCC /* AmadeusAPICALL */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AmadeusAPICALL;
+			sourceTree = "<group>";
+		};
 		E7F166062991CAC300483E25 = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +236,7 @@
 		E7F166112991CAC300483E25 /* StudygoesOnWorldTrip */ = {
 			isa = PBXGroup;
 			children = (
+				E7B078D629A980BF001EADCC /* AmadeusAPICALL */,
 				E72EEE6D29A7739D008C93BB /* Utils */,
 				E74DF3C529A6B431007AA084 /* Sounds */,
 				E74DF3A429A65AB7007AA084 /* TabButtons */,
@@ -257,6 +263,8 @@
 		E7F166202991CB0A00483E25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E7FAEE2F29AA119200955400 /* ProgressView */,
+				E7FAEE2C29A9DE5400955400 /* HotelSearch */,
 				E72EEE7929A7B32D008C93BB /* ForgotPasswort */,
 				E72EEE7029A7B1D6008C93BB /* Login */,
 				E74DF3CB29A6E9F3007AA084 /* Home */,
@@ -266,6 +274,22 @@
 				E74DF3B329A6AE22007AA084 /* Job */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E7FAEE2C29A9DE5400955400 /* HotelSearch */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAEE2D29A9DE6F00955400 /* HotelSearchView.swift */,
+			);
+			path = HotelSearch;
+			sourceTree = "<group>";
+		};
+		E7FAEE2F29AA119200955400 /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				E7FAEE3029AA11B400955400 /* FlightProgressView.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -356,9 +380,11 @@
 				E74DF3A029A65937007AA084 /* Model.swift in Sources */,
 				E74DF3B929A6AEE3007AA084 /* JobListViewModel.swift in Sources */,
 				E74DF3AA29A65B74007AA084 /* ProfilView.swift in Sources */,
+				E7FAEE2E29A9DE6F00955400 /* HotelSearchView.swift in Sources */,
 				E74DF3A829A65B34007AA084 /* MainView.swift in Sources */,
-				E7EC0C6B29A8FC9600C877B6 /* FlightEndPoint.swift in Sources */,
+				E7FAEE2329A9A38700955400 /* FlightSearchViewModel.swift in Sources */,
 				E74DF3BF29A6AFAA007AA084 /* JobDetailView.swift in Sources */,
+				E7FAEE3129AA11B400955400 /* FlightProgressView.swift in Sources */,
 				E74DF3BD29A6AF63007AA084 /* JobModel.swift in Sources */,
 				E74DF3B029A65C05007AA084 /* HomeView.swift in Sources */,
 				E74DF3A629A65AC8007AA084 /* tabButton.swift in Sources */,
@@ -368,9 +394,7 @@
 				E74DF3C129A6B013007AA084 /* ModelData.swift in Sources */,
 				E72EEE7629A7B2BD008C93BB /* LogoView.swift in Sources */,
 				E74DF3AE29A65BE3007AA084 /* PlaneView.swift in Sources */,
-				E7EC0C5329A8BA6400C877B6 /* FlightListViewModel.swift in Sources */,
 				E7F166152991CAC300483E25 /* ContentView.swift in Sources */,
-				E7EC0C6929A8FBC800C877B6 /* OriginalFlightEndPoint.swift in Sources */,
 				E7F166132991CAC300483E25 /* StudygoesOnWorldTripApp.swift in Sources */,
 				E72EEE7829A7B2F2008C93BB /* LogoShape.swift in Sources */,
 				E74DF3AC29A65BC6007AA084 /* JobView.swift in Sources */,

@@ -19,13 +19,17 @@ struct ForgotPasswordView: View {
         VStack {
             ZStack {
 
-                Image("black")
+                Image("loginground")
                     .resizable()
-                    .edgesIgnoringSafeArea(.all)
-                    .opacity(0.9)
+                    .ignoresSafeArea()
+                    .opacity(0.3)
                     .overlay(alignment:
-                            .bottomTrailing, content: { // toptrailing setzt es an den oberen Rand
+                    .bottomTrailing, content: { // toptrailing setzt es an den oberen Rand
                             })
+                Image("hill")
+                    .resizable()
+                    .frame(maxWidth: .infinity)
+                    .position(x:195,y:450)
                 
                 Text("Forgot your Password")
                     .font(.system(size:30)) // macht text kleiner
@@ -40,6 +44,7 @@ struct ForgotPasswordView: View {
                         .overlay(alignment:
                                 .bottomTrailing, content: { // toptrailing setzt es an den oberen Rand
                                 })
+                    
                     
                     Text("Enter your email below to receive your \n password reset instructions")
                         .foregroundColor(Color.white)
@@ -64,7 +69,8 @@ struct ForgotPasswordView: View {
                         self.showNextView40 = true
                     }) {
                         Text("send")
-                            .foregroundColor(Color.orange)
+                            .foregroundColor(Color.white)
+                        background(Color.orange)
                     }
                     .sheet(isPresented: $showNextView40) {
                         ForgetPasswordInfoView()

@@ -29,7 +29,7 @@ struct SearchBar: UIViewRepresentable {
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
       searchTerm = searchBar.text ?? ""
-      UIApplication.shared.windows.first { $0.isKeyWindow }?.endEditing(true)
+     // UIApplication.shared.windows.first { $0.isKeyWindow }?.endEditing(true)
     }
   }
 }

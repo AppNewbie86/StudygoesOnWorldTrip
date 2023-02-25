@@ -11,15 +11,15 @@ struct EmptyStateView: View {
   var body: some View {
     VStack {
       Spacer()
-      Image(systemName: "briefcase.fill")
+      Image(systemName: "graduationcap.circle")
         .font(.system(size: 85))
         .padding(.bottom)
-      Text("Start searching for a Job...")
+      Text("the easy Way to search a Work and Traveljob....")
         .font(.title)
       Spacer()
     }
     .padding()
-    .foregroundColor(Color(.systemBlue))
+    .foregroundColor(Color(.green))
   }
 }
 
