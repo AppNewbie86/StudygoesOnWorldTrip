@@ -1,3 +1,4 @@
+// FlightSearchViewModel.swift
 import SwiftUI
 import Combine
 import Amadeus
@@ -34,31 +35,31 @@ class FlightSearchViewModel: ObservableObject {
         }
     }
 }
-
-struct FlightDestination: Decodable, Identifiable {
-    let id = UUID().uuidString
+struct FlightDestination: Codable, Identifiable {
+    let id = UUID()
     let type: String
-    let subType: String
-    let name: String
-    let detailedName: String
+    let origin: String
     let destination: String
-    let analytics: Analytics
+    let departureDate: String
+    let returnDate: String
+    let price: Price
 }
 
-struct Analytics: Decodable {
-    let flights: Flights
+struct Price: Codable {
+    let total: String
 }
-
-struct Flights: Decodable {
-    let score: Double
-    let travelers: [String: Double]
-
-    private enum CodingKeys: String, CodingKey {
-        case score
-        case travelers = "travelers_distribution"
+    
+    struct Analytics: Decodable {
+        let flights: Flights
     }
-}
+    
+    struct Flights: Decodable {
+        let score: Double
+        let travelers: [String: Double]
+        
+        private enum CodingKeys: String, CodingKey {
+            case score
+            case travelers = "travelers_distribution"
+        }
+    }
 
-struct Travelers: Decodable {
-    let onePointZero: Double
-}

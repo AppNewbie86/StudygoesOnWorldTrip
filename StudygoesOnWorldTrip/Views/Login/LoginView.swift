@@ -79,7 +79,7 @@ struct LoginContentView: View {
                     NavigationLink(destination: ForgotPasswordView()) {
                         Text("Forgot Password")
                             .font(.system(size: 12, weight: .bold))
-                            .foregroundColor(.white)
+                            .foregroundColor(.orange)
                             .frame(maxWidth: .infinity)
                             .padding(.top)
                     }
