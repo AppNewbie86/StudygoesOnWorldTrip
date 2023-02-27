@@ -2,6 +2,8 @@ import SwiftUI
 
 struct LoginView: View {
     
+    @Binding var selected : Model
+    
     var body: some View {
         NavigationView {
             LoginContentView()
@@ -13,17 +15,18 @@ struct LoginView: View {
 
 struct LoginContentView: View {
     
-    // State property to control the position of the hill image
+    // State Eigenschaft steuert die position von dem Berg Bild
     @State private var hillOffset = CGSize.zero
     
-    // State property to control the opacity of the login button
+   // @State-Eigenschaft buttonOpacity verwendet wird, um die Deckkraft des Buttons zu steuern.
     @State private var buttonOpacity = 0.0
     
+    
+    // AnzeigeBereich
     var body: some View {
         ZStack {
-            // Background image and other views ...
             
-            // Hill image with animation
+            // BergBild mit animation
             Image("hill")
                 .resizable()
                 .frame(maxWidth: .infinity)
@@ -48,7 +51,7 @@ struct LoginContentView: View {
                 FormField(image: "lock", placeholder: "password", isSecure: true)
                     .padding(.top)
                 
-                // Login button with animation
+                // NavigationLink, um zur MainView zu navigieren, wenn der Benutzer erfolgreich angemeldet ist.
                 NavigationLink(destination: MainView()) {
                     Text("Login")
                         .font(.system(size: 21, weight: .bold))
@@ -75,7 +78,7 @@ struct LoginContentView: View {
                 
                 HStack {
                     Spacer()
-                    
+                    // Die Ansicht enthält auch einen Link zum Zurücksetzen des Passworts
                     NavigationLink(destination: ForgotPasswordView()) {
                         Text("Forgot Password")
                             .font(.system(size: 12, weight: .bold))

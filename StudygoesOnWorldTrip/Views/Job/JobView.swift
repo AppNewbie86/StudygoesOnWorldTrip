@@ -6,16 +6,26 @@
 //
 
 import SwiftUI
+import Foundation
+
+import SwiftUI
 
 struct JobView: View {
     @ObservedObject var viewModel: JobListViewModel
     @State private var offsetY: CGFloat = 0.0
     
     var body: some View {
-        GeometryReader { geometry in
-            NavigationView {
+        NavigationView {
+            ZStack {
+                Image("dash") // Hintergrundbild
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                
                 VStack {
+                    Spacer(minLength: 100)
                     SearchBar(searchTerm: $viewModel.searchTerm)
+                    
                     if viewModel.jobs.isEmpty {
                         EmptyStateView()
                     } else {
@@ -25,16 +35,16 @@ struct JobView: View {
                             }
                         }
                         .listStyle(PlainListStyle())
+                        .opacity(0.6) // Transparente Liste
                         .offset(y: offsetY)
-                        .animation(.spring())
                         .gesture(DragGesture().onChanged({ value in
                             self.offsetY = value.translation.height
                         }).onEnded({ value in
-                            withAnimation {
+                            withAnimation(.spring()) {
                                 if offsetY > 50 {
-                                    offsetY = geometry.size.height
+                                    offsetY = UIScreen.main.bounds.height
                                 } else if offsetY < -50 {
-                                    offsetY = -geometry.size.height
+                                    offsetY = -UIScreen.main.bounds.height
                                 } else {
                                     offsetY = 0
                                 }
@@ -42,8 +52,8 @@ struct JobView: View {
                         }))
                     }
                 }
-                .navigationBarTitle("StudyWorkFinder")
             }
+            
         }
     }
 }

@@ -56,6 +56,7 @@ struct HomeView: View {
                             
                             Image("\(travel.img)")
                                 .resizable()
+                                .aspectRatio(contentMode: .fill)
                                 .frame(maxWidth: .infinity)
                                 .cornerRadius(10)
                                 .matchedGeometryEffect(id: travel.img, in: animation)

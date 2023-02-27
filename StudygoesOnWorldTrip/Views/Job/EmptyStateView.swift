@@ -14,8 +14,10 @@ struct EmptyStateView: View {
       Image(systemName: "graduationcap.circle")
         .font(.system(size: 85))
         .padding(.bottom)
-      Text("the easy Way to search a Work and Traveljob....")
-        .font(.title)
+      Text("you are looking for a travel and work\n job then you are right here")
+            .font(.headline)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
       Spacer()
     }
     .padding()

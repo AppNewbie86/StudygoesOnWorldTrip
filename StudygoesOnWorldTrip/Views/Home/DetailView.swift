@@ -25,9 +25,10 @@ struct DetailView: View {
                     Image(selected.img)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(height:150)
+                        .frame(height:330)//150
                         .clipShape(RoundedShape(corners: [.bottomLeft,.bottomRight]))
                         .matchedGeometryEffect(id: selected.img, in: animation)
+                    
                     
                     HStack {
                         
@@ -37,7 +38,6 @@ struct DetailView: View {
                         }){
                             
                             Image(systemName: "chevron.left")
-                                .font(.title)
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color.black)
@@ -49,7 +49,6 @@ struct DetailView: View {
                         Button(action: {}){
                             
                             Image(systemName: "suit.heart")
-                                .font(.title)
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color.black)
@@ -58,13 +57,65 @@ struct DetailView: View {
                         .padding()
                         
                     }
+                    .padding()
+                    .padding(.top,UIApplication.shared.windows.first?
+                        .safeAreaInsets.top)
                 }
+                
+                
+                HStack(alignment: .top){
+                    VStack(alignment: .leading,spacing: 12){
+                        Text(selected.title)
+                            .font(.title)
+                            .foregroundColor(Color("txt"))
+                            .fontWeight(.bold)
+                            .matchedGeometryEffect(id: selected.title, in: animation)
+                        
+                        HStack(spacing: 10){
+                            
+                            Image("map")
+                            
+                            Text(selected.country)
+                                .foregroundColor(.black)
+                                .matchedGeometryEffect(id: selected.country, in: animation)
+
+                            
+                            HStack(spacing: 5){
+                                
+                                Text(selected.ratings)
+                                    .foregroundColor(.black)
+
+                                
+                                Image(systemName: "star.fill")
+                                    .foregroundColor(.yellow)
+                                
+                                
+                            }
+                            
+                        }
+                    }
+                    
+                    Spacer(minLength: 0)
+                    
+                    Text(selected.price)
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color("txt"))
+                    
+                }
+                .padding()
+                .padding(.bottom)
+
             }
+            .background(Color.white)
+            .clipShape(RoundedShape(corners: [.bottomLeft,.bottomRight]))
+            
             Spacer(minLength: 0)
-                .background(Color.gray)
+                    
         }
-        
-        
+        .background(Color.gray)
+            
     }
-    
+        
 }
+
